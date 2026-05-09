@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happyyyy 8 Monthssssss</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Landing Page -->
+  <main class="app">
+    <section id="landing" class="view landing-view is-active" aria-label="Landing page">
+      <img class="background-image" src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=1800&q=80" alt="">
+      <video class="background-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=1800&q=80">
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+      </video>
+      <div class="romantic-overlay"></div>
+      <div class="landing-content reveal">
+        <p class="eyebrow">Today feels special, because it’s the day I tell you how much you mean to me</p>
+        <h1>I have something special to ask you...</h1>
+        <button class="primary-button glow-button" id="continueBtn">Click to Continue</button>
+      </div>
+    </section>
+
+    <!-- Proposal Page -->
+    <section id="proposal" class="view proposal-view template-minimal" aria-label="Proposal page">
+      <div class="floating-hearts" aria-hidden="true"></div>
+
+      <div class="proposal-shell">
+        <header class="proposal-header">
+          <p class="eyebrow">A tiny love letter</p>
+          <h2>For the one who makes ordinary days beautiful</h2>
+          <p class="appreciation-text" contenteditable="true" aria-label="Editable appreciation message">
+            You make my world softer, brighter, and full of reasons to smile. Thank you for being my favorite hello, my safest place, and my sweetest dream.
+          </p>
+        </header>
+
+        <!-- Template Switcher -->
+        <div class="template-controls" aria-label="Choose proposal layout">
+          <button class="template-button is-selected" data-template="minimal">Minimal romantic</button>
+          <button class="template-button" data-template="collage">Photo-heavy collage</button>
+          <button class="template-button" data-template="video">Video-focused layout</button>
+        </div>
+
+        <div class="proposal-stage">
+          <!-- Rotating Images Slideshow -->
+          <div class="slideshow" aria-label="Romantic photo slideshow">
+            <figure class="slide">
+              <img src="C:\Users\Swayam\OneDrive\사진\Saved Pictures\WhatsApp Image 2026-05-08 at 9.19.56 PM (1).jpeg" alt="Romantic lights">
+            </figure>
+            <figure class="slide">
+              <img src="C:\Users\Swayam\OneDrive\사진\Saved Pictures\WhatsApp Image 2026-05-08 at 9.19.56 PM.jpeg" alt="Flowers and romance">
+            </figure>
+            <figure class="slide">
+              <img src="C:\Users\Swayam\OneDrive\사진\Saved Pictures\WhatsApp Image 2026-05-08 at 9.19.57 PM (1).jpeg" alt="Romantic lights">
+            </figure>
+            <figure class="slide">
+              <img src="C:\Users\Swayam\OneDrive\사진\Saved Pictures\WhatsApp Image 2026-05-08 at 9.27.24 PM.jpeg" alt="Romantic lights">
+            </figure>
+          </div>
+
+          <!-- Collage Template Photos -->
+          <div class="collage-grid" aria-label="Photo collage">
+            <img src="C:\Users\Swayam\OneDrive\사진\Saved Pictures\WhatsApp Image 2026-05-08 at 8.42.37 PM.jpeg" alt="Romantic date table">
+            <img src="C:\Users\Swayam\OneDrive\사진\Saved Pictures\IS3.jpeg" alt="Wedding couple">
+            <img src="C:\Users\Swayam\OneDrive\사진\Saved Pictures\WhatsApp Image 2026-05-08 at 8.41.35 PM.jpeg" alt="Romantic dinner">
+            <img src="C:\Users\Swayam\OneDrive\사진\Saved Pictures\IS2.jpeg" alt="Couple sunset">
+          </div>
+
+          <!-- Video-focused Template -->
+          <div class="proposal-video-wrap">
+            <video class="proposal-video" muted autoplay loop playsinline poster="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80">
+              <source src="C:\Users\Swayam\OneDrive\Desktop\IS1.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <!-- Proposal Buttons -->
+        <div class="proposal-actions">
+          <button class="yes-button" id="yesBtn">YES <span aria-hidden="true">💍</span></button>
+          <button class="no-button" id="noBtn">NO <span aria-hidden="true">😅</span></button>
+        </div>
+      </div>
+
+      <!-- Optional Background Music -->
+      <audio id="backgroundMusic" loop muted>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+      </audio>
+    </section>
+
+    <!-- Celebration Page -->
+    <section id="celebration" class="view celebration-view" aria-label="Celebration page">
+      <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+      <div class="celebration-card reveal">
+        <p class="script-title">I knew it 😏 ❤️</p>
+        <button class="primary-button" id="memoryPromptBtn">Continue</button>
+      </div>
+    </section>
+
+    <!-- Memory Lane Page -->
+    <section id="memory" class="view memory-view" aria-label="Memory lane page">
+      <div class="memory-content reveal">
+        <p class="eyebrow">One more little journey</p>
+        <h2>Would you like to go through our memory lane?</h2>
+        <div class="memory-actions">
+          <button class="primary-button memory-choice">Yes ❤️</button>
+          <button class="primary-button memory-choice">Definitely Yes 😍</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Full-screen Memories Video -->
+    <section id="memoriesVideo" class="view video-view" aria-label="Memories video page">
+      <video id="memoryVideo" class="memory-video" playsinline preload="metadata">
+        <source src="C:\Users\Swayam\OneDrive\사진\Saved Pictures\special.mp4" type="video/mp4">
+      </video>
+      <div id="finalOverlay" class="final-overlay">
+        <h2>Every moment with you is my favorite story ❤️</h2>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
